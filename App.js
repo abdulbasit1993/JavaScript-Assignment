@@ -231,3 +231,13 @@ document.write("Quantity of item 2 is " + quantity_item2 + "<br>");
 document.write("Shipping Charges " + shipping_charges);
 document.write("<br><br>");
 document.write("Total cost of your order is " +totalCost);
+
+// Task # 8
+document.write("<br><br>");
+document.write("<h1>Marks Sheet</h1>");
+var marks_obtained = 804;
+var total_marks = 980;
+var percentage = (marks_obtained / total_marks) * 100;
+document.write("Total marks: " +total_marks + "<br>");
+document.write("Marks obtained: " +marks_obtained + "<br>");
+document.write("Percentage: " +percentage + "%");
