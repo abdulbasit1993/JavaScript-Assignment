@@ -137,4 +137,30 @@ var num1 = prompt("Enter first number:");
 var num2 = prompt("Enter second number:");
 var sum = (+num1) + (+num2);
 document.write("<br>");
+document.write("<br>");
 document.write("Sum of " + num1 + " and " + num2 + " is " + sum);
+
+// Task # 2
+var num1 = prompt("Enter first number:");
+var num2 = prompt("Enter second number:");
+var sub = num1 - num2;
+document.write("<br>");
+document.write("Subtraction of " + num1 + " from " + num2 + " is " + sub);
+
+var num1 = prompt("Enter first number:");
+var num2 = prompt("Enter second number:");
+var mult = num1 * num2;
+document.write("<br>");
+document.write("Multiplication of " + num1 + " and " + num2 + " is " + mult);
+
+var num1 = prompt("Enter first number:");
+var num2 = prompt("Enter second number:");
+var divide = num1 / num2;
+document.write("<br>");
+document.write("Division of " + num1 + " and " + num2 + " is " + divide);
+
+var num1 = prompt("Enter first number:");
+var num2 = prompt("Enter second number:");
+var mod = num1 % num2;
+document.write("<br>");
+document.write("Modulus of " + num1 + " and " + num2 + " is " + mod);
