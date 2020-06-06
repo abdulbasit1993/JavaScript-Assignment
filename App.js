@@ -164,3 +164,70 @@ var num2 = prompt("Enter second number:");
 var mod = num1 % num2;
 document.write("<br>");
 document.write("Modulus of " + num1 + " and " + num2 + " is " + mod);
+
+// Task # 3
+document.write("<br>");
+document.write("<br>");
+var numvar;
+document.write("Value after variable declaration is: " +numvar);
+document.write("<br>");
+numvar = 5;
+document.write("Initial value: " +numvar);
+document.write("<br>");
+numvar++;
+document.write("Value after increment is: " +numvar);
+document.write("<br>");
+numvar = numvar + 7;
+document.write("Value after addition is: " +numvar);
+document.write("<br>");
+numvar--;
+document.write("Value after decrement is: " +numvar);
+document.write("<br>");
+numvar = numvar % 3;
+document.write("The remainder is: " +numvar);
+
+// Task # 4
+document.write("<br>");
+document.write("<br>");
+var ticketPrice = 600;
+var ticketQuantity = 5;
+var totalPrice = ticketQuantity * ticketPrice;
+document.write("Total cost to buy " + ticketQuantity +" tickets to a movie is " + totalPrice + "PKR");
+
+// Task # 5
+document.write("<br>");
+document.write("<br>");
+var tablenum = 8;
+document.write("Table of "+tablenum);
+document.write("<br>");
+for(var i = 1; i <= 10; i++)
+{
+    document.write(tablenum + " x " + i + " = " + tablenum * i + "<br>");
+}
+
+// Task # 6
+document.write("<br><br>");
+var Cel = 25;
+var Fah = (Cel * 9 / 5) + 32;
+document.write(Cel + "°C" + " is " + Fah + "°F");
+var Fahr = 70;
+var Cels = (Fahr - 32) * 5 / 9;
+document.write("<br>");
+document.write(Fahr + "°F" + " is " + Cels + "°C");
+
+// Task # 7
+document.write("<br><br>");
+document.write("<h1>Shopping Cart</h1>");
+var price_item1 = 650;
+var price_item2 = 100;
+var quantity_item1 = 3;
+var quantity_item2 = 7;
+var shipping_charges = 100;
+var totalCost = (price_item1 * quantity_item1) + (price_item2 * quantity_item2) + shipping_charges;
+document.write("Price of item 1 is " + price_item1 + "<br>");
+document.write("Quantity of item 1 is " + quantity_item1 + "<br>");
+document.write("Price of item 2 is " + price_item2 + "<br>");
+document.write("Quantity of item 2 is " + quantity_item2 + "<br>");
+document.write("Shipping Charges " + shipping_charges);
+document.write("<br><br>");
+document.write("Total cost of your order is " +totalCost);
