@@ -129,3 +129,12 @@ document.write("Variable names are " + str8);
 document.write("<br>");
 var str9 = "keywords"; 
 document.write("Variable names should not be JS " + str9);
+
+// Chapter # 5
+
+// Task # 1
+var num1 = prompt("Enter first number:");
+var num2 = prompt("Enter second number:");
+var sum = (+num1) + (+num2);
+document.write("<br>");
+document.write("Sum of " + num1 + " and " + num2 + " is " + sum);
