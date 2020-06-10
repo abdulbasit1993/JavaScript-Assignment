@@ -241,3 +241,53 @@ var percentage = (marks_obtained / total_marks) * 100;
 document.write("Total marks: " +total_marks + "<br>");
 document.write("Marks obtained: " +marks_obtained + "<br>");
 document.write("Percentage: " +percentage + "%");
+
+// Task # 9
+document.write("<br><br>");
+document.write("<h1>Currency in PKR</h1>");
+var usdRate = 104.80;
+var riyalRate = 28;
+var pkr = (10 * usdRate) + (25 * riyalRate);
+document.write("Total Currency in PKR: " +pkr);
+
+// Task # 10
+document.write("<br><br>");
+document.write("<h1>Arithmetic Calculations</h1>");
+var myNumber = 6;
+var result = myNumber + 5 * 10 / 2;
+document.write("Result of calculations is: " +result);
+
+// Task # 11
+document.write("<br><br>");
+var currentYear = 2020;
+var yearOfBirth = 1993;
+var age1 = currentYear - yearOfBirth;
+var age2 = age1 - 1;
+document.write("<h1>Age Calculator</h1>");
+document.write("Current Year: " +currentYear);
+document.write("<br>");
+document.write("Birth Year: " +yearOfBirth);
+document.write("<br>");
+document.write("They are either " +age1 + " or " +age2 + " years old");
+
+// Task # 12
+document.write("<br><br>");
+document.write("<h1>The Geometrizer</h1>");
+var circle_radius = 20;
+var circumference = 2 * 3.142 * circle_radius;
+var area_circle = 3.142 * circle_radius * circle_radius;
+document.write("Radius of a circle: " +circle_radius);
+document.write("<br>");
+document.write("The circumference is: " + circumference);
+document.write("<br>");
+document.write("The area is: " + area_circle);
+
+// Task # 13
+document.write("<br><br>");
+document.write("<h1>The Lifetime Supply Calculator</h1>");
+var fav_snack = "Potato Chips";
+var current_age = 26;
+var max_age = 68;
+var amount_per_day = 2;
+var totallifetimesupply = (amount_per_day * 365) * (max_age - current_age);
+document.write("You will need " +totallifetimesupply + " " +fav_snack + " to last you until the ripe old age of " +max_age);
