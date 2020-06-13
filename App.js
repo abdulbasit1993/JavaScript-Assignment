@@ -366,5 +366,10 @@ var total_subject_marks = subject_marks + subject_marks + subject_marks;
 var obtained_subject1 = prompt("Enter marks obtained in First Subject: ");
 var obtained_subject2 = prompt("Enter marks obtained in Second Subject: ");
 var obtained_subject3 = prompt("Enter marks obtained in Third Subject: ");
-var total_obtained_marks = obtained_subject1 + obtained_subject2 + obtained_subject3;
-var percentage = (total_obtained_marks / total_subject_marks) * 100;
+var total_obtained_marks = (+obtained_subject1) + (+obtained_subject2) + (+obtained_subject3);
+var total_percentage = (total_obtained_marks / total_subject_marks) * 100;
+document.write("<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr><tr><td><script>document.write(subject1);</script></td><td><script>document.write(subject_marks);</script></td><td><script>document.write(obtained_subject1);</script></td><td><script>document.write(obtained_subject1 + '%');</script></td></tr><tr><td><script>document.write(subject2);</script></td><td><script>document.write(subject_marks);</script></td><td><script>document.write(obtained_subject2);</script></td><td><script>document.write(obtained_subject2 + '%');</script></td></tr><tr><td><script>document.write(subject3);</script></td><td><script>document.write(subject_marks);</script></td><td><script>document.write(obtained_subject3);</script></td><td><script>document.write(obtained_subject3 + '%');</script></td></tr><tr><td></td><td><script>document.write(total_subject_marks);</script></td><td><script>document.write(total_obtained_marks);</script></td><td><script>document.write(total_percentage + '%');</script></td></tr></table>");
+
+// Chapters # 9 - 11
+
+// Task # 1
