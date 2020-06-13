@@ -375,38 +375,112 @@ document.write("<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained Mark
 // Task # 1
 document.write("<br><br>");
 var city_name = prompt("Enter name of city: ");
-if(city_name == "Karachi" || city_name == "karachi") {
+if (city_name == "Karachi" || city_name == "karachi") {
     alert("Welcome to City of Lights!");
 }
 
 // Task # 2
 document.write("<br><br>");
 var your_gender = prompt("Enter your gender: e.g. Male / Female");
-if(your_gender == "Male" || your_gender == "male") {
+if (your_gender == "Male" || your_gender == "male") {
     alert("Good Morning Sir!");
-} 
-if(your_gender == "Female" || your_gender == "female") {
+}
+if (your_gender == "Female" || your_gender == "female") {
     alert("Good Morning Ma'am!");
 }
 
 // Task # 3
 document.write("<br><br>");
 var traffic_signal = prompt("Enter color of road traffic signal: ");
-if(traffic_signal == "Red" || traffic_signal == "red") {
+if (traffic_signal == "Red" || traffic_signal == "red") {
     alert("Must Stop!");
 }
-if(traffic_signal == "Yellow" || traffic_signal == "yellow") {
+if (traffic_signal == "Yellow" || traffic_signal == "yellow") {
     alert("Ready to move!");
 }
-if(traffic_signal == "Green" || traffic_signal == "green") {
+if (traffic_signal == "Green" || traffic_signal == "green") {
     alert("Move now!");
 }
 
 // Task # 4
 document.write("<br><br>");
 var remaining_fuel = prompt("Enter remaining fuel in car (in litres): ");
-if(remaining_fuel < 0.25) {
+if (remaining_fuel < 0.25) {
     alert("Please refill the fuel in your car");
 }
 
 // Task # 5
+document.write("<br><br>");
+var a = 4;
+if (++a === 5) {
+    alert("given condition for variable a is true");
+}
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+var c = 12;
+if (c++ === 13) {
+    alert("condition 1 is true");
+}
+if (c === 13) {
+    alert("condition 2 is true");
+}
+if (++c < 14) {
+    alert("condition 3 is true");
+}
+if (c === 14) {
+    alert("condition 4 is true");
+}
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+}
+if (true) {
+    alert("True");
+}
+if (false) {
+    alert("False");
+}
+if ("car" < "cat") {
+    alert("car is smaller than cat");
+}
+
+// Task # 6
+document.write("<br><br>");
+var marks_1 = prompt("Enter marks obtained in first subject: ");
+var marks_2 = prompt("Enter marks obtained in second subject: ");
+var marks_3 = prompt("Enter marks obtained in third subject: ");
+var total_marks_obt = (+marks_1) + (+marks_2) + (+marks_3);
+var total_marks_subjs = prompt("Enter total marks: ");
+var percentage_of_marks = total_marks_obt / total_marks_subjs * 100;
+document.write("<h1>Marks Sheet</h1>");
+document.write("Total marks: " +total_marks_subjs);
+document.write("<br>");
+document.write("Marks obtained: " +total_marks_obt);
+document.write("<br>");
+document.write("Percentage: " +percentage_of_marks + "%");
+document.write("<br>");
+if(percentage_of_marks >= 80) {
+    document.write("Grade: A-one");
+    document.write("<br>");
+    document.write("Remarks: Excellent");
+}
+if(percentage_of_marks >= 70) {
+    document.write("Grade: A");
+    document.write("<br>");
+    document.write("Remarks: Good");
+}
+if(percentage_of_marks >= 60) {
+    document.write("Grade: B");
+    document.write("<br>");
+    document.write("Remarks: You need to improve");
+    
+}
+if(percentage_of_marks < 60) {
+    document.write("Grade: Fail");
+    document.write("<br>");
+    document.write("Remarks: Sorry");
+}
