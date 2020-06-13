@@ -373,3 +373,40 @@ document.write("<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained Mark
 // Chapters # 9 - 11
 
 // Task # 1
+document.write("<br><br>");
+var city_name = prompt("Enter name of city: ");
+if(city_name == "Karachi" || city_name == "karachi") {
+    alert("Welcome to City of Lights!");
+}
+
+// Task # 2
+document.write("<br><br>");
+var your_gender = prompt("Enter your gender: e.g. Male / Female");
+if(your_gender == "Male" || your_gender == "male") {
+    alert("Good Morning Sir!");
+} 
+if(your_gender == "Female" || your_gender == "female") {
+    alert("Good Morning Ma'am!");
+}
+
+// Task # 3
+document.write("<br><br>");
+var traffic_signal = prompt("Enter color of road traffic signal: ");
+if(traffic_signal == "Red" || traffic_signal == "red") {
+    alert("Must Stop!");
+}
+if(traffic_signal == "Yellow" || traffic_signal == "yellow") {
+    alert("Ready to move!");
+}
+if(traffic_signal == "Green" || traffic_signal == "green") {
+    alert("Move now!");
+}
+
+// Task # 4
+document.write("<br><br>");
+var remaining_fuel = prompt("Enter remaining fuel in car (in litres): ");
+if(remaining_fuel < 0.25) {
+    alert("Please refill the fuel in your car");
+}
+
+// Task # 5
