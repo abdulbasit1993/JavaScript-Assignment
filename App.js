@@ -98,7 +98,9 @@ document.write(visitorName + " ordered " + quantity + " " + productTitle + "(s) 
 // Chapter # 4
 
 // Task # 1
-var variable1 = "JavaScript", variable2 = "is", variable3 = "Cool!";
+var variable1 = "JavaScript",
+    variable2 = "is",
+    variable3 = "Cool!";
 
 // Task # 2
 // Legal variable names:
@@ -117,17 +119,22 @@ var 5thnum;
 */
 
 // Task # 3
-var str1 = "letters", str2 = "numbers", str3 = "underscores", str4 = "dollar signs";
+var str1 = "letters",
+    str2 = "numbers",
+    str3 = "underscores",
+    str4 = "dollar signs";
 document.write("<h1>Rules for naming JS variables</h1>");
 document.write("Variable names can only contain " + str1 + ", " + str2 + ", " + str3 + ", and " + str4 + ". For example $my_1stVariable");
 document.write("<br>");
-var str5 = "letter", str6 = "a dollar sign ($)", str7 = "an underscore (_)";
+var str5 = "letter",
+    str6 = "a dollar sign ($)",
+    str7 = "an underscore (_)";
 document.write("Variables must begin with a " + str5 + ", " + str6 + ", or " + str7 + ". For example $name, _name or name");
 document.write("<br>");
 var str8 = "case-sensitive";
 document.write("Variable names are " + str8);
 document.write("<br>");
-var str9 = "keywords"; 
+var str9 = "keywords";
 document.write("Variable names should not be JS " + str9);
 
 // Chapter # 5
@@ -169,22 +176,22 @@ document.write("Modulus of " + num1 + " and " + num2 + " is " + mod);
 document.write("<br>");
 document.write("<br>");
 var numvar;
-document.write("Value after variable declaration is: " +numvar);
+document.write("Value after variable declaration is: " + numvar);
 document.write("<br>");
 numvar = 5;
-document.write("Initial value: " +numvar);
+document.write("Initial value: " + numvar);
 document.write("<br>");
 numvar++;
-document.write("Value after increment is: " +numvar);
+document.write("Value after increment is: " + numvar);
 document.write("<br>");
 numvar = numvar + 7;
-document.write("Value after addition is: " +numvar);
+document.write("Value after addition is: " + numvar);
 document.write("<br>");
 numvar--;
-document.write("Value after decrement is: " +numvar);
+document.write("Value after decrement is: " + numvar);
 document.write("<br>");
 numvar = numvar % 3;
-document.write("The remainder is: " +numvar);
+document.write("The remainder is: " + numvar);
 
 // Task # 4
 document.write("<br>");
@@ -192,16 +199,15 @@ document.write("<br>");
 var ticketPrice = 600;
 var ticketQuantity = 5;
 var totalPrice = ticketQuantity * ticketPrice;
-document.write("Total cost to buy " + ticketQuantity +" tickets to a movie is " + totalPrice + "PKR");
+document.write("Total cost to buy " + ticketQuantity + " tickets to a movie is " + totalPrice + "PKR");
 
 // Task # 5
 document.write("<br>");
 document.write("<br>");
 var tablenum = 8;
-document.write("Table of "+tablenum);
+document.write("Table of " + tablenum);
 document.write("<br>");
-for(var i = 1; i <= 10; i++)
-{
+for (var i = 1; i <= 10; i++) {
     document.write(tablenum + " x " + i + " = " + tablenum * i + "<br>");
 }
 
@@ -230,7 +236,7 @@ document.write("Price of item 2 is " + price_item2 + "<br>");
 document.write("Quantity of item 2 is " + quantity_item2 + "<br>");
 document.write("Shipping Charges " + shipping_charges);
 document.write("<br><br>");
-document.write("Total cost of your order is " +totalCost);
+document.write("Total cost of your order is " + totalCost);
 
 // Task # 8
 document.write("<br><br>");
@@ -238,9 +244,9 @@ document.write("<h1>Marks Sheet</h1>");
 var marks_obtained = 804;
 var total_marks = 980;
 var percentage = (marks_obtained / total_marks) * 100;
-document.write("Total marks: " +total_marks + "<br>");
-document.write("Marks obtained: " +marks_obtained + "<br>");
-document.write("Percentage: " +percentage + "%");
+document.write("Total marks: " + total_marks + "<br>");
+document.write("Marks obtained: " + marks_obtained + "<br>");
+document.write("Percentage: " + percentage + "%");
 
 // Task # 9
 document.write("<br><br>");
@@ -248,14 +254,14 @@ document.write("<h1>Currency in PKR</h1>");
 var usdRate = 104.80;
 var riyalRate = 28;
 var pkr = (10 * usdRate) + (25 * riyalRate);
-document.write("Total Currency in PKR: " +pkr);
+document.write("Total Currency in PKR: " + pkr);
 
 // Task # 10
 document.write("<br><br>");
 document.write("<h1>Arithmetic Calculations</h1>");
 var myNumber = 6;
 var result = myNumber + 5 * 10 / 2;
-document.write("Result of calculations is: " +result);
+document.write("Result of calculations is: " + result);
 
 // Task # 11
 document.write("<br><br>");
@@ -264,11 +270,11 @@ var yearOfBirth = 1993;
 var age1 = currentYear - yearOfBirth;
 var age2 = age1 - 1;
 document.write("<h1>Age Calculator</h1>");
-document.write("Current Year: " +currentYear);
+document.write("Current Year: " + currentYear);
 document.write("<br>");
-document.write("Birth Year: " +yearOfBirth);
+document.write("Birth Year: " + yearOfBirth);
 document.write("<br>");
-document.write("They are either " +age1 + " or " +age2 + " years old");
+document.write("They are either " + age1 + " or " + age2 + " years old");
 
 // Task # 12
 document.write("<br><br>");
@@ -276,7 +282,7 @@ document.write("<h1>The Geometrizer</h1>");
 var circle_radius = 20;
 var circumference = 2 * 3.142 * circle_radius;
 var area_circle = 3.142 * circle_radius * circle_radius;
-document.write("Radius of a circle: " +circle_radius);
+document.write("Radius of a circle: " + circle_radius);
 document.write("<br>");
 document.write("The circumference is: " + circumference);
 document.write("<br>");
@@ -290,4 +296,75 @@ var current_age = 26;
 var max_age = 68;
 var amount_per_day = 2;
 var totallifetimesupply = (amount_per_day * 365) * (max_age - current_age);
-document.write("You will need " +totallifetimesupply + " " +fav_snack + " to last you until the ripe old age of " +max_age);
+document.write("You will need " + totallifetimesupply + " " + fav_snack + " to last you until the ripe old age of " + max_age);
+
+// Chapters # 6 - 9
+
+// Task # 1
+document.write("<h1>——————————————————————————————————————————</h1>");
+var a = 10;
+
+document.write("Result:" + "<br>");
+document.write("The value of a is: " + a + "<br>");
+document.write(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
+document.write("<br><br>");
+document.write("The value of ++a is: " + ++a);
+document.write("<br>");
+document.write("Now the value of a is: " + a);
+document.write("<br><br>");
+document.write("The value of a++ is: " + a++);
+document.write("<br>");
+document.write("Now the value of a is: " + a);
+document.write("<br><br>");
+document.write("The value of --a is: " + --a);
+document.write("<br>");
+document.write("Now the value of a is: " + a);
+document.write("<br><br>");
+document.write("The value of a-- is: " + a--);
+document.write("<br>");
+document.write("Now the value of a is: " + a);
+
+// Task # 2
+document.write("<br><br><br>");
+var a = 2,
+    b = 1;
+var result = --a - --b + ++b + b--;
+document.write("a is " + a);
+document.write("<br>");
+document.write("b is " + b);
+document.write("<br>");
+document.write("result is " + result);
+
+// Task # 3
+document.write("<br><br>");
+var username = prompt("Enter your name:");
+document.write("Welcome " + username + "!");
+
+// Task # 4
+document.write("<br><br>");
+var multablenum = prompt("Enter a number to display it's Multiplication Table:");
+var i;
+document.write("<h1>Multiplication Table</h1>");
+
+if (multablenum == "") {
+    for (i = 1; i <= 10; i++) {
+        document.write(5 + " x " + i + " = " + 5 * i + "<br>");
+    }
+} else {
+    for (i = 1; i <= 10; i++) {
+        document.write(multablenum + " x " + i + " = " + multablenum * i + "<br>");
+    }
+}
+
+// Task # 5
+document.write("<br><br>");
+var subject1 = prompt("Enter name of First Subject: ");
+var subject2 = prompt("Enter name of Second Subject: ");
+var subject3 = prompt("Enter name of Third Subject: ");
+var subject_marks = 100;
+var total_subject_marks = subject_marks + subject_marks + subject_marks;
+var obtained_subject1 = prompt("Enter marks obtained in First Subject: ");
+var obtained_subject2 = prompt("Enter marks obtained in Second Subject: ");
+var obtained_subject3 = prompt("Enter marks obtained in Third Subject: ");
+var total_obtained_marks = obtained_subject1 + obtained_subject2 + obtained_subject3;
+var percentage = (total_obtained_marks / total_subject_marks) * 100;
