@@ -497,7 +497,57 @@ else if(num_guess == secret_num + 1) {
 }
 
 // Task # 8
+document.write("<br><br>");
 var num_to_check = prompt("Enter a number to check if it's divisible by 3 :");
 if(num_to_check % 3 == 0) {
     alert("This number is divisible by 3");
 }
+
+// Task # 9
+document.write("<br><br>");
+var num_even_odd = prompt("Enter a number to check if it's even or odd :");
+if(num_even_odd % 2 == 0) {
+    alert("Even number");
+}
+else {
+    alert("Odd number");
+}
+
+// Task # 10
+document.write("<br><br>");
+var temper_input = prompt("Enter the temperature: ");
+if(temper_input > 40) {
+    alert("It is too hot outside");
+}
+else if(temper_input > 30) {
+    alert("The Weather today is Normal");
+}
+else if(temper_input > 20) {
+    alert("Today's Weather is cool");
+}
+else if(temper_input > 10) {
+    alert("OMG! Today's weather is so Cool");
+}
+
+// Task # 11
+document.write("<br><br>");
+var calc_val1 = prompt("Enter your first value:");
+var calc_sign = prompt("Enter your operator (+, -, *, /, or %)");
+var calc_val2 = prompt("Enter your second value:");
+
+if(calc_sign === '+') {
+    alert(calc_val1 + " " + calc_sign + " " + calc_val2 + " = " + (parseInt(calc_val1) + parseInt(calc_val2)));
+} else if(calc_sign === '-'){
+    alert(calc_val1 + " " + calc_sign + " " + calc_val2 + " = " + (calc_val1 - calc_val2));
+} else if(calc_sign === '*'){
+    alert(calc_val1 + " " + calc_sign + " " + calc_val2 + " = " + (calc_val1 * calc_val2));
+} else if(calc_sign === '/'){
+    alert(calc_val1 + " " + calc_sign + " " + calc_val2 + " = " + (calc_val1 / calc_val2));
+} else if(calc_sign === '%'){
+    alert(calc_val1 + " " + calc_sign + " " + calc_val2 + " = " + (calc_val1 % calc_val2));
+}
+
+// Chapters # 12 - 13
+
+// Task # 1
+document.write("<br><br>");
