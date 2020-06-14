@@ -467,20 +467,37 @@ if(percentage_of_marks >= 80) {
     document.write("Grade: A-one");
     document.write("<br>");
     document.write("Remarks: Excellent");
-}
-if(percentage_of_marks >= 70) {
+} 
+else if(percentage_of_marks >= 70) {
     document.write("Grade: A");
     document.write("<br>");
     document.write("Remarks: Good");
-}
-if(percentage_of_marks >= 60) {
+} 
+else if(percentage_of_marks >= 60) {
     document.write("Grade: B");
     document.write("<br>");
     document.write("Remarks: You need to improve");
     
 }
-if(percentage_of_marks < 60) {
+else if(percentage_of_marks < 60) {
     document.write("Grade: Fail");
     document.write("<br>");
     document.write("Remarks: Sorry");
+}
+
+// Task # 7
+document.write("<br><br>");
+var secret_num = 8;
+var num_guess = prompt("Enter your guess of secret number: ");
+if(num_guess == 8) {
+    alert("Bingo! Correct answer");
+}
+else if(num_guess == secret_num + 1) {
+    alert("Close enough to the correct answer");
+}
+
+// Task # 8
+var num_to_check = prompt("Enter a number to check if it's divisible by 3 :");
+if(num_to_check % 3 == 0) {
+    alert("This number is divisible by 3");
 }
