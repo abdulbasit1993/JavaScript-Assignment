@@ -607,3 +607,58 @@ else if(numb < 0) {
 else if(numb == 0) {
     alert("The number is zero");
 }
+
+// Task # 4
+document.write("<br><br>");
+var charac = prompt("Enter a character: ");
+if(charac == 'a' || charac == 'A' || charac == 'e' || charac == 'E' || charac == 'i' || charac == 'I' || charac == 'o' || charac == 'O' || charac == 'u' || charac == 'U') {
+    alert("This is a vowel");
+} else {
+    alert("This is not a vowel");
+}
+
+// Task # 5
+document.write("<br><br>");
+var correct_password = "abdulbasit";
+var inp_password = prompt("Enter your password: ");
+if(inp_password == "") {
+    alert("Please enter your password");
+}
+else if (inp_password == correct_password) {
+    alert("Correct! The password you entered matches the original password");
+}
+else {
+    alert("Incorrect password");
+}
+
+// Task # 6
+document.write("<br><br>");
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+}
+else {
+greeting = "Good evening";
+}
+alert(greeting);
+
+// Task # 7
+document.write("<br><br>");
+var inp_time = prompt("Enter time in 24 hours clock format (like 1900 = 7pm)");
+if(inp_time >= 0000 && inp_time < 1200)
+{
+    alert("Good Morning!");
+}
+else if(inp_time >= 1200 && inp_time < 1700)
+{
+    alert("Good Afternoon!");
+}
+else if(inp_time >= 1700 && inp_time < 2100)
+{
+    alert("Good Evening!");
+}
+else if(inp_time >= 2100 && inp_time <= 2359)
+{
+    alert("Good Night!");
+}
