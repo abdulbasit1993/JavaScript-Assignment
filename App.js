@@ -551,3 +551,59 @@ if(calc_sign === '+') {
 
 // Task # 1
 document.write("<br><br>");
+var char_input = prompt("Enter any character: ");
+var ascii_code = char_input.charCodeAt();
+if (ascii_code >= 65 && ascii_code <= 90)
+{
+    alert("Character is an uppercase letter");
+}
+else if (ascii_code >= 97 && ascii_code <=122)
+{
+    alert("Character is a small letter");
+}
+else if (ascii_code >= 48 && ascii_code <= 57)
+{
+    alert("Character is a digit");
+}
+else if ((ascii_code > 0 && ascii_code <= 47)||(ascii_code >= 58 && ascii_code <= 64)||
+(ascii_code >= 91 && ascii_code <=96)||(ascii_code >= 123 && ascii_code <= 127))
+{
+    alert("Character is a special symbol");
+}
+
+// Task # 2
+document.write("<br><br>");
+function max_integer()
+{
+    var max_val;
+    var x = +prompt("Enter first number:");
+    var y = +prompt("Enter second number:");
+    if(x > y)
+    {
+        max_val = x;
+    }
+    else if(y > x){
+        max_val = y;
+    }
+    else if(x == y && y == x) {
+        alert("Both integers are equal");
+    }
+    else {
+        alert("Both integers are not equal");
+    }
+    alert("Largest integer is: " +max_val);
+}
+max_integer();
+
+// Task # 3
+document.write("<br><br>");
+var numb = prompt("Enter a number: ");
+if(numb > 0) {
+    alert("The number is positive");
+}
+else if(numb < 0) {
+    alert("The number is negative");
+}
+else if(numb == 0) {
+    alert("The number is zero");
+}
