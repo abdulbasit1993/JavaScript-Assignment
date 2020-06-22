@@ -662,3 +662,42 @@ else if(inp_time >= 2100 && inp_time <= 2359)
 {
     alert("Good Night!");
 }
+
+// Chapters # 14 - 16
+
+// Task # 1
+document.write("<br><br>");
+var studentNames = [];
+
+// Task # 2
+document.write("<br><br>");
+var studentNames2 = new Array();
+
+// Task # 3
+document.write("<br><br>");
+var stringsArray = [ "apple", "orange", "mango" ];
+
+// Task # 4
+document.write("<br><br>");
+var numbersArray = [40, 50, 60, 70, 80, 90];
+
+// Task # 5
+document.write("<br><br>");
+var boolArray = [true, false];
+
+// Task # 6
+document.write("<br><br>");
+var mixedArray = [1, "A ", 2, "Mixed ",3,"Array."];
+
+// Task # 7
+document.write("<br><br>");
+var qualifications, text, fLen, i;
+qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+fLen = qualifications.length;
+document.write("Qualifications: " + "<br>");
+text = "<ol>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + qualifications[i] + "</li>";
+}
+text += "</ol>";
+document.write(text);
