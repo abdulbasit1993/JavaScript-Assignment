@@ -701,3 +701,82 @@ for (i = 0; i < fLen; i++) {
 }
 text += "</ol>";
 document.write(text);
+
+// Task # 8
+document.write("<br><br>");
+var studentNamesArray = ["Michael", "John", "Tony"];
+var studentTotalScores = [320, 230, 480];
+var totalMarks = 500;
+document.write("Score of " + studentNamesArray[0] + " is " + studentTotalScores[0] + ". Percentage: " + studentTotalScores[0]/totalMarks * 100 + "%");
+document.write("<br>");
+document.write("Score of " + studentNamesArray[1] + " is " + studentTotalScores[1] + ". Percentage: " + studentTotalScores[1]/totalMarks * 100 + "%");
+document.write("<br>");
+document.write("Score of " + studentNamesArray[2] + " is " + studentTotalScores[2] + ". Percentage: " + studentTotalScores[2]/totalMarks * 100 + "%");
+
+// Task # 9
+document.write("<br><br>");
+var colorNames = ["Red", "Green", "Blue"];
+var i;
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+document.write("<br><br>");
+var colorNamesAdd = prompt("Enter color name that you want to add to the start of the list: ");
+colorNames.unshift(colorNamesAdd);
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+document.write("<br><br>");
+var colorNamesAddtoEnd = prompt("Enter color name that you want to add to the end of the list: ");
+colorNames.push(colorNamesAddtoEnd);
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+colorNames.unshift("Orange", "Purple");
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+colorNames.shift();
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+colorNames.pop();
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+var colorNamesAddtoindex = prompt("Enter color name that you want to add to the list: ");
+var colorNamesIndex = +prompt("Enter the index/position at which you want to add the color name to the list: (for ex. 1)");
+colorNames.splice(colorNamesIndex, 0, colorNamesAddtoindex);
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+var colorNamestoDelete = +prompt("Enter the index/position at which you want to delete the color name from the list: (for ex. 2)");
+var howManyColors = +prompt("How many colors do you want to delete? (for ex. 2):");
+colorNames.splice(colorNamestoDelete, howManyColors);
+document.write("<h2>Updated Array</h2>");
+for(i = 0; i<colorNames.length; i++) {
+    document.write(colorNames[i] + "<br>");
+}
+
+// Task # 10
+document.write("<br><br>");
+var studentScoresArray = [320, 230, 480, 120];
+document.write("Scores of Students: " + studentScoresArray);
+document.write("<br>");
+var sortedScores = studentScoresArray.sort();
+document.write("Ordered Scores of Students: " + sortedScores);
+
+// Task # 11
+document.write("<br><br>");
+var citiesList = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+var selectedcities = citiesList.slice(2,5);
+document.write("Cities List: " + "<br>");
+document.write(citiesList);
+document.write("<br><br>" + "Selected cities list:" + "<br>");
+document.write(selectedcities);
