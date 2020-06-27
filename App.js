@@ -780,3 +780,12 @@ document.write("Cities List: " + "<br>");
 document.write(citiesList);
 document.write("<br><br>" + "Selected cities list:" + "<br>");
 document.write(selectedcities);
+
+// Task # 12
+document.write("<br><br>");
+var arr = ["This", "is", "my", "cat"];
+var arrJoin = arr.join(' ');
+document.write("Array:" + "<br>");
+document.write(arr + "<br><br>");
+document.write("String:" + "<br>");
+document.write(arrJoin);
